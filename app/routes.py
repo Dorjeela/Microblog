@@ -4,7 +4,7 @@ from app.forms import LoginForm
 from flask_login import current_user, login_user, logout_user, login_required
 import sqlalchemy as sa
 from app.models import User
-from irllib.parse import urlsplit
+from urllib.parse import urlsplit
 
 @app.route('/')
 @app.route('/index')
